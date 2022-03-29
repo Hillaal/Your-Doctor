@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Chat with doctor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget
+{
+	background-color: rgb(178, 212, 195);
+	color: white;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+
+
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: rgb(216, 118, 117);
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 10px;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #5c5c5c;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgb(207, 86, 86);
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: rgb(190, 54, 54);
+
+}
+
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: rgb(66, 185, 155);
+	color: white;
+    font-weight: bold;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: none;
+	padding: 5px;
+	font-size: 15px;
+
+
+}
+
+
+
+
+QTextEdit
+{
+	background-color: rgb(66, 185, 155);
+	color: white;
+	border: none;
+    font-weight: bold;
+	font-size: 13px;
+	padding: 5px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}
+
+QTextEdit::hover
+{
+	background-color: rgb(53, 151, 126);
+
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="chatbox">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>380</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="browser">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>50</y>
+      <width>401</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>460</y>
+      <width>401</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>3000</width>
+      <height>200</height>
+     </size>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="refresh">
+       <property name="maximumSize">
+        <size>
+         <width>3000</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Refresh</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exit">
+       <property name="maximumSize">
+        <size>
+         <width>3000</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Exit chat</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="back">
+       <property name="maximumSize">
+        <size>
+         <width>3000</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

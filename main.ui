@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main</class>
+ <widget class="QMainWindow" name="main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>992</width>
+    <height>688</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Your Doctor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget
+{
+	background-color: rgb(178, 212, 195);
+	color: white;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+
+
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: rgb(216, 118, 117);
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 10px;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #5c5c5c;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgb(207, 86, 86);
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: rgb(190, 54, 54);
+
+}
+
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: rgb(66, 185, 155);
+	color: white;
+    font-weight: bold;
+	font-size: 18px;
+	padding: 5px;
+	padding-top: 8px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+
+
+QLineEdit::hover
+{
+	background-color: rgb(53, 151, 126);
+
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="diagnose">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>150</y>
+      <width>311</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>immediate diagnose</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chat">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>310</y>
+      <width>311</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chat with Doctor</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>381</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameLabel">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>90</y>
+      <width>611</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Please Enter Your Name then press Enter</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>470</y>
+      <width>211</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="enterName">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>150</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="name">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>150</y>
+      <width>441</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionback">
+   <property name="text">
+    <string>back </string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

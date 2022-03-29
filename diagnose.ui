@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>992</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DocBot</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget
+{
+	background-color: rgb(178, 212, 195);
+	color: white;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+
+
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: rgb(216, 118, 117);
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 10px;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #5c5c5c;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgb(207, 86, 86);
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: rgb(190, 54, 54);
+
+}
+
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: red;
+	color: #2a547f;
+	border: none;
+	padding: 5px;
+
+}
+
+QTextEdit
+{
+	background-color: rgb(66, 185, 155);
+	color: white;
+	border: none;
+    font-weight: bold;
+	font-size: 13px;
+	padding: 5px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+
+}
+
+QTextEdit::hover
+{
+	background-color: rgb(53, 151, 126);
+
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="browser">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>661</width>
+      <height>301</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>360</y>
+      <width>221</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="fever">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Fever</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="headache">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Headache</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ab">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Abdominal pain</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="heartburn">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Heartburn</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>360</y>
+      <width>221</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QPushButton" name="vomiting">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Vomiting</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="sneezing">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Sneezing</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="sr">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Skin Rash</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="diarrhea">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Diarrhea</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>410</y>
+      <width>261</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="yes">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Yes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="back">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="no">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>3000</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>No</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
